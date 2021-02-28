@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/order_LAY_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/left_arrow"
+            app:tint="@color/orange" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/back"
+            android:textColor="@color/orange"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_LBL_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/order_delivery"
+        android:textColor="@color/orange"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/order_LAY_motorcycle_and_5kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_LBL_title"
+        android:layout_alignStart="@id/order_LBL_title"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/order_LBL_up_to_5kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/up_to_5kg"
+            android:textColor="@color/orange" />
+
+        <ImageView
+            android:id="@+id/order_IMG_icon_motorcycle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/motorcycle"
+            app:tint="@color/orange" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_LAY_car_and_up_to_10kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_LBL_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/order_LAY_motorcycle_and_5kg"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/order_LBL_up_to_10kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/up_to_10kg"
+            android:textColor="@color/gray" />
+
+        <ImageView
+
+            android:id="@+id/order_IMG_icon_car"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/car" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/order_LAY_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/phone_number"
+            android:textColorHint="@color/gray"
+            android:theme="@style/EditTextCursorColor"
+            app:boxStrokeColor="@color/orange"
+            app:endIconTint="@color/orange"
+            app:hintTextColor="@color/orange"
+            app:startIconDrawable="@drawable/phone"
+            app:startIconTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/order_EDT_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/enter_name"
+            android:textColorHint="@color/gray"
+            android:theme="@style/EditTextCursorColor"
+            app:boxStrokeColor="@color/orange"
+            app:endIconTint="@color/orange"
+            app:hintTextColor="@color/orange"
+            app:startIconDrawable="@drawable/person"
+            app:startIconTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/order_EDT_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/enter_origin"
+            android:textColorHint="@color/gray"
+            android:theme="@style/EditTextCursorColor"
+            app:boxStrokeColor="@color/orange"
+            app:endIconTint="@color/orange"
+            app:hintTextColor="@color/orange"
+            app:startIconDrawable="@drawable/home"
+            app:startIconTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/order_EDT_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/enter_destination"
+            android:textColorHint="@color/gray"
+            android:theme="@style/EditTextCursorColor"
+            app:boxStrokeColor="@color/orange"
+            app:endIconTint="@color/orange"
+            app:hintTextColor="@color/orange"
+            app:startIconDrawable="@drawable/flag"
+            app:startIconTint="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/order_EDT_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/order_BTN_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/orange"
+        android:paddingHorizontal="50dp"
+        android:text="@string/confirm"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

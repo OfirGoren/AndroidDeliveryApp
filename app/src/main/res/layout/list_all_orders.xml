@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/all_orders_IMG_person"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/person"
+                android:backgroundTint="@color/orange" />
+
+            <TextView
+                android:id="@+id/all_orders_LBL_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/all_orders_IMG_person"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+
+
+            <ImageView
+                android:id="@+id/all_orders_IMG_phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/all_orders_IMG_person"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/phone"
+                android:backgroundTint="@color/orange" />
+
+            <TextView
+                android:id="@+id/all_orders_LBL_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_orders_LBL_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@id/all_orders_IMG_phone"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/all_orders_IMG_home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/all_orders_IMG_phone"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/home"
+                android:backgroundTint="@color/orange" />
+
+            <TextView
+                android:id="@+id/all_orders_LBL_home_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_orders_LBL_number"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_toEndOf="@id/all_orders_IMG_phone"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/all_orders_IMG_flag"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/all_orders_IMG_home"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/flag"
+                android:backgroundTint="@color/orange" />
+
+            <TextView
+                android:id="@+id/all_orders_LBL_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_orders_LBL_home_address"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toEndOf="@id/all_orders_IMG_flag"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+
+
+            <ImageView
+                android:id="@+id/all_orders_IMG_car_or_motorcycle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/orange" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

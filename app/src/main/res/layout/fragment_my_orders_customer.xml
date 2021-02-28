@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_shade_brown">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fra_my_orders_recycler_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:listitem="@layout/my_orders_list" />
+
+    <ProgressBar
+        android:id="@+id/fra_my_orders_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@color/orange"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

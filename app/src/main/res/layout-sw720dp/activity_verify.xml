@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ConnectActivity">
+
+    <LinearLayout
+        android:id="@+id/verify_LAY_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/orange"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/verify_LBL_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/verify_LAY_back"
+        android:background="@color/orange"
+        android:gravity="center|bottom"
+        android:text="@string/verify_phone"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/verify_LBL_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verify_LBL_title"
+        android:background="@color/orange"
+        android:gravity="center|bottom"
+        android:paddingVertical="30dp"
+        android:text="@string/enter_verification_code"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:id="@+id/connect_IMG_wave"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@id/verify_LBL_verify_code"
+        android:background="@drawable/wave" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/enter_code"
+        android:theme="@style/EditTextCursorColor"
+        app:boxStrokeColor="@color/orange"
+        app:hintTextColor="@color/orange"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/verify_EDT_number_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="15"
+            android:inputType="text"
+            android:textSize="15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verify_BTN_verify_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/orange"
+        android:paddingHorizontal="60dp"
+        android:text="@string/verify"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

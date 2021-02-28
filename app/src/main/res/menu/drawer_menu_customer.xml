@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/customer_nav_my_order"
+            android:actionLayout="@layout/custom_layout"
+            android:icon="@drawable/time"
+            android:title="@string/my_orders" />
+
+        <item
+            android:id="@+id/customer_nav_Switch_Account"
+            android:actionLayout="@layout/custom_layout"
+            android:icon="@drawable/swap"
+            android:title="@string/courier_account" />
+
+        <item
+            android:id="@+id/customer_nav_Log_Out"
+            android:actionLayout="@layout/custom_layout"
+            android:icon="@drawable/logout"
+            android:title="@string/log_out" />
+    </group>
+</menu>
