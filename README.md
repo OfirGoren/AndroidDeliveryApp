@@ -3,7 +3,7 @@
 ## Description:
 
 Delivery App - The app is designed to provide a fast delivery service in Israel for packages up to 10 kilos. 
-Each user can log in to a customer account and place an order, or log in to a courier's account and take an order.
+Each user can log in to a customer account and place an order, or log in to a courier's account and take deliveries.
 
 
 
