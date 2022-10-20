@@ -1,4 +1,4 @@
-# Delivery Android App 
+# Delivery App 
 
 ## Description:
 
